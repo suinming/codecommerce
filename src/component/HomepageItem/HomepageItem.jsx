@@ -12,7 +12,7 @@ class HomepageItem extends Component {
 
     render() {
         const {itemInfo, index} = this.props
-        const img = `./codecommerce/img/${itemInfo.categories}/${itemInfo.name}.jpg`
+        const img = `/codecommerce/img/${itemInfo.categories}/${itemInfo.name}.jpg`
 
         return (
             <div className='card' data-index={index} onClick={this.props.popupClick}>

@@ -29,7 +29,7 @@ class Item extends React.Component{
 
     render(){
         const {itemInfo} = this.props
-        const img = `./codecommerce/img/${itemInfo.categories}/${itemInfo.name}.jpg`
+        const img = `/codecommerce/img/${itemInfo.categories}/${itemInfo.name}.jpg`
         
         return(
             this.state.itemDisplay && 

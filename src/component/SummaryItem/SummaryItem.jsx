@@ -4,7 +4,7 @@ import './SummaryItem.css'
 class SummaryItem extends React.Component{
     render(){
         const {product, index} = this.props
-        const img = `./codecommerce/img/${product.item.categories}/${product.item.name}.jpg`
+        const img = `/codecommerce/img/${product.item.categories}/${product.item.name}.jpg`
         return(
             <div className='summaryItem' key={'item-' + index}>
                 <div className='imgWrapper'>

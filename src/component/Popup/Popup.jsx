@@ -14,7 +14,7 @@ class Popup extends Component {
 
     render() {
         const {data, popupClose, addToCart, index} = this.props
-        const img = `./codecommerce/img/${data.categories}/${data.name}.jpg`
+        const img = `/codecommerce/img/${data.categories}/${data.name}.jpg`
 
         //remove the HTML tag in description
         data.description = this.removeHTMLtag(data.description)

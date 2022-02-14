@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/codecommerce/static/css/main.d8ec3873.chunk.css",
-    "main.js": "/codecommerce/static/js/main.9aebff23.chunk.js",
-    "main.js.map": "/codecommerce/static/js/main.9aebff23.chunk.js.map",
+    "main.css": "/codecommerce/static/css/main.7d22ef76.chunk.css",
+    "main.js": "/codecommerce/static/js/main.a42461b8.chunk.js",
+    "main.js.map": "/codecommerce/static/js/main.a42461b8.chunk.js.map",
     "runtime-main.js": "/codecommerce/static/js/runtime-main.f517bd03.js",
     "runtime-main.js.map": "/codecommerce/static/js/runtime-main.f517bd03.js.map",
     "static/js/2.414a9b04.chunk.js": "/codecommerce/static/js/2.414a9b04.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.0699b94f.chunk.js": "/codecommerce/static/js/3.0699b94f.chunk.js",
     "static/js/3.0699b94f.chunk.js.map": "/codecommerce/static/js/3.0699b94f.chunk.js.map",
     "index.html": "/codecommerce/index.html",
-    "static/css/main.d8ec3873.chunk.css.map": "/codecommerce/static/css/main.d8ec3873.chunk.css.map",
+    "static/css/main.7d22ef76.chunk.css.map": "/codecommerce/static/css/main.7d22ef76.chunk.css.map",
     "static/js/2.414a9b04.chunk.js.LICENSE.txt": "/codecommerce/static/js/2.414a9b04.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.f517bd03.js",
     "static/js/2.414a9b04.chunk.js",
-    "static/css/main.d8ec3873.chunk.css",
-    "static/js/main.9aebff23.chunk.js"
+    "static/css/main.7d22ef76.chunk.css",
+    "static/js/main.a42461b8.chunk.js"
   ]
 }

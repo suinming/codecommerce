@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './SearchResult.css'
-import Item from '../Item/Item';
 import HomepageItem from '../HomepageItem/HomepageItem';
 
 class SearchResult extends Component {
@@ -29,14 +28,6 @@ class SearchResult extends Component {
             <div className="colName">Product</div>
             <div className='searchResultContainer'>
                 {displayItemArr.map( (item, index) => (
-                    // <Item  // 1. create a new component 'homepageitem', 
-                    //        // while click on this item can show the detail info and add to the summary
-                    //        // 2. hompageitem component should display like a card (like project in pokemonAPI)
-                    // itemInfo = {item}
-                    // index = {index}
-                    // key={item.name}
-                    // pushElementToArr = {this.pushElementToArr}
-                    // />
                     <HomepageItem 
                     itemInfo = {item}
                     index = {index}

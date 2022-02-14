@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './HomepageItem.css'
-import Popup from '../Popup/Popup';
 
 class HomepageItem extends Component {
 
@@ -13,7 +12,7 @@ class HomepageItem extends Component {
 
     render() {
         const {itemInfo, index} = this.props
-        const img = `/img/${itemInfo.categories}/${itemInfo.name}.jpg`
+        const img = `./codecommerce/img/${itemInfo.categories}/${itemInfo.name}.jpg`
 
         return (
             <div className='card' data-index={index} onClick={this.props.popupClick}>

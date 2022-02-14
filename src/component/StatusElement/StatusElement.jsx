@@ -4,7 +4,7 @@ import './StatusElement.css'
 class StatusElement extends Component {
     render() {
         const {item} = this.props
-        const img = `/img/${item.categories}/${item.name}.jpg`
+        const img = `./codecommerce/img/${item.categories}/${item.name}.jpg`
         return (
             <div key={item.name} className='itemWrapper'>
                     <div className="StatusleftSection">

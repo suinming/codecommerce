@@ -105,7 +105,7 @@ class Login extends React.Component{
                     ))
                 }
                 {/* submit button*/}
-                <InputBase name='login' type='submit' value='Login'></InputBase>
+                <InputBase name='login' type='submit' value='Login' />
                 <div className='btn-wrapper fbSignIn'>
                     <InputBase type="submit" value='Sign up with FACEBOOK' />
                 </div>

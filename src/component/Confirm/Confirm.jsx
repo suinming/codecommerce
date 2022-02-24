@@ -34,59 +34,63 @@ class Confirm extends React.Component{
     render(){
         const {toPrevPage, toNextPage, status} = this.state;
         const {itemData, userData, cardData, totalPrice, shippingMethod, discount} = this.props
-        if(toPrevPage){
-            return(<PaymentInfo
-                    itemData = {itemData} 
-                    userData = {userData}
-                    totalPrice = {totalPrice}
-                    discount = {discount}
-            />
-            )
-        } else if(toNextPage){
-            return(<SignupLogin/>)
-        } else {
-            return(
-            <div className="container">
-                    {/* left block*/}
-                    <div className="confirmation">
-                        {/* process flow chart*/}
-                        <Process status = {this.state.status} key='process'/>
-                        <h2 className='shippingInfoTitle'>Confirmation</h2>
-                        {/* confirm information*/}
-                        <div className='confirmationInfo'>
-                            <div className="confirmationTitle">
-                                Congratulation !!
-                                <br />
-                                Your Order Is Accepted
+
+        return(
+        <>
+            {/* to previous page*/}
+            {toPrevPage && <PaymentInfo
+                        itemData = {itemData} 
+                        userData = {userData}
+                        totalPrice = {totalPrice}
+                        discount = {discount}/> 
+            }
+            
+            {/* to next page*/}
+            {toNextPage && <SignupLogin />}
+
+            {/* confirm page*/}
+            {!toPrevPage && !toNextPage && 
+                <div className="container">
+                        {/* left block*/}
+                        <div className="confirmation">
+                            {/* process flow chart*/}
+                            <Process status = {this.state.status} key='process'/>
+                            <h2 className='shippingInfoTitle'>Confirmation</h2>
+                            {/* confirm information*/}
+                            <div className='confirmationInfo'>
+                                <div className="confirmationTitle">
+                                    Congratulation !!
+                                    <br />
+                                    Your Order Is Accepted
+                                </div>
+                                <div className="confirmationContent">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                    <br />
+                                    Atque qui facilis, vel totam omnis deserunt maiores est 
+                                    <br />
+                                    voluptas voluptate blanditiis fuga sit mollitia necessitatibus
+                                    <br /> 
+                                    culpa sapiente, quaerat velit dolores error.
+                                </div>
                             </div>
-                            <div className="confirmationContent">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                                <br />
-                                Atque qui facilis, vel totam omnis deserunt maiores est 
-                                <br />
-                                voluptas voluptate blanditiis fuga sit mollitia necessitatibus
-                                <br /> 
-                                culpa sapiente, quaerat velit dolores error.
-                            </div>
+                            <button className='backBtn' onClick={this.handleBtnBack}>Back To PaymentInfo</button>
                         </div>
-                        <button className='backBtn' onClick={this.handleBtnBack}>Back To PaymentInfo</button>
-                    </div>
-                    {/* right block*/}
-                    <Summary
-                    key='summary'
-                    status = {status}
-                    isPageFinished = {this.state.isPageFinished}
-                    handlePageFinished={this.handlePageFinished}
-                    itemData = {itemData} 
-                    userData = {userData}
-                    cardData = {cardData}
-                    totalPrice = {totalPrice}
-                    discount = {discount}
-                    shippingMethod = {shippingMethod}
-                    />
-            </div>
-            )
-        }
+                        {/* right block*/}
+                        <Summary
+                        key='summary'
+                        status = {status}
+                        isPageFinished = {this.state.isPageFinished}
+                        handlePageFinished={this.handlePageFinished}
+                        itemData = {itemData} 
+                        userData = {userData}
+                        cardData = {cardData}
+                        totalPrice = {totalPrice}
+                        discount = {discount}
+                        shippingMethod = {shippingMethod}
+                        />
+                </div>}
+        </>
+        )
     }
 }
 

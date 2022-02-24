@@ -81,9 +81,7 @@ class Homepage extends Component {
 
     handlePageFinished = () => { 
         const {cartItem, isPageFinished} = this.state 
-        if(cartItem.length >= 1){
-            this.setState({isPageFinished: !isPageFinished})
-        }
+        cartItem.length && this.setState({isPageFinished: !isPageFinished})
     }
 
     render() {
